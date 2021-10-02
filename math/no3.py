@@ -1,6 +1,4 @@
 n = 0
 while True:
     n += 1
-    if n % 3 == 0 and n % 4 == 0 and n % 5 == 0 and n % 6 == 0:
-        print(n)
-        exit()
+    [ print(n) if n % i == 0 for i in [3, 4, 5, 6]]
